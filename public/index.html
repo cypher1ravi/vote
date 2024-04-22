@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Information and Voting Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        input[type="checkbox"] {
+            width: 30%;
+            height: 30%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header bg-primary text-white text-center py-2 d-flex justify-content-between px-3">
+        <h3>Sasan Power Voting Portal</h3>
+        <a href="result.html" class="text-white">Result</a>
+    </header>
+    <div class="container mt-4 p-4 card">
+        <h2 class="mb-4">Voting Form</h2>
+        <form id="employee-form">
+            <!-- Form fields -->
+            <div class="row">
+                <div class="form-group col-6 ">
+                    <label for="employee-name">Employee Name:</label>
+                    <input type="text" class="form-control" id="employee-name" name="employeeName" required />
+                </div>
+                <div class="form-group col-6 ">
+                    <label for="employeid">Employee ID:</label>
+                    <input type="number" class="form-control" id="employee-id" name="employeeId" required />
+                </div>
+            </div>
+
+
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2 ">
+                        <input type="checkbox" class="form-check-input" name="products" value="electric kettle"
+                            id="product1" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/electicKettle.png" alt="Product1" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            Electric Kettle 2L – Rs 350/-
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2 ">
+                        <input type="checkbox" class="form-check-input" name="products" value="portable juicer"
+                            id="product2" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/rechargeble_juicer.png" alt="Product 2" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            Portable Re-Chargeable Juicer – Rs. 270/-
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2 ">
+                        <input type="checkbox" class="form-check-input" name="products" value="toiletry kit"
+                            id="product3" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/toiletry_kit.png" alt="Glass" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            3 Layer toiletry kit S44 Rs 400
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="motivtional bottet"
+                            id="product4" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/motivational_bottel.png" alt="Product 5" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            Motivational Bottle - Rs 300/-
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="mega lunchbox"
+                            id="product5" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/megalunch_box.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            18MI-H35-LUNCH BOX-RS.300
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="24SPW -3520"
+                            id="product6" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/spw1.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            24SPW -3520 Rs 310
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="24SPW -3524"
+                            id="product7" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/spw2.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            24SPW -3524 Rs 360
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="mug-H228"
+                            id="product8" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/doublewall mug.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            Double wall Coffee mug-H228-Rs 270
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="mug with Handle-H252"
+                            id="product9" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/mugwithcarabinar.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            Coffee mug with Carabiner Handle-H252 Rs 310
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="mug GM608"
+                            id="product10" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/doublewall mug-24.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            Double Wall Mug -24GM- GM608-
+                            Rs 380
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value=" VACUUM FLASK  GM620"
+                            id="product11" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/DOUBLE WALL VACUUM FLASK.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            DOUBLE WALL VACUUM FLASK (500 ML)24GM- GM620 -Rs 400
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="Flora Steel bottle-H282"
+                            id="product12" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/Flora Steel bottle Colored.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            Flora Steel bottle Colored -H282-Rs 290
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="H2O PRO BOTTLE
+                        " id="product13" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/h20 pro bottel.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            H2O PRO BOTTLE (700 ML) GM-237-Rs.280
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="Straight Steel bottle-H224 
+                        " id="product14" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/Flora Steel bottle Colored.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            Insulated Straight Steel bottle-H224 Rs280
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="SINGLE WALL  BOTTLE GM410 
+
+                        " id="product15" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/SINGLE WALL S.S BOTTLE.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            SINGLE WALL S.S BOTTLE (750 ML) GM410 -Rs 340
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="SINGLE WALL BOTTLE GM602
+
+
+                        " id="product16" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/SINGLE WALL BOTTLE.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            SINGLE WALL BOTTLE (750 ML) 24GM-GM602-Rs 330
+
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="oscar Coffee mug
+
+
+                        " id="product17" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/oscar Coffee mug-Rs 350.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            Coffee mug-Rs 350 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value=" foggy coffee mug-H226
+
+
+                        " id="product18" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/foggy Coffee mug-Rs 350.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            Stainless Steel coffee mug-H226-Rs.290
+
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check card mb-2">
+                <div class="row p-2">
+                    <div class="col-2">
+                        <input type="checkbox" class="form-check-input" name="products" value="coffee mug-H227
+
+                        " id="product19" />
+                    </div>
+                    <div class="col-3">
+                        <img src="./images/Stainless Steel coffee mug-H227.png" alt="Product 4" class="w-75 h-auto" />
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            Stainless Steel coffee mug-H227-Rs.290
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Repeat the structure for other products -->
+            <button type="button" class="btn btn-primary mt-3 w-100" onclick="submitForm()">
+                Submit
+            </button>
+        </form>
+    </div>
+    <script>
+        function submitForm() {
+            var employeeName = document.getElementById("employee-name").value;
+            var employeeId = document.getElementById("employee-id").value;
+            var checkedProducts = document.querySelectorAll(
+                "input[name='products']:checked"
+            );
+
+            // Check if at least 3 products are selected
+            if (checkedProducts.length === 3) {
+                alert("Please select three products.");
+                return;
+            }
+
+            var products = Array.from(checkedProducts).map((el) => el.value);
+
+            fetch("/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ employeeName, employeeId, products }),
+            })
+                .then((response) => {
+                    if (response.ok) {
+                        alert("Data submitted successfully");
+                        document.getElementById("employee-form").reset();
+                    } else {
+                        throw new Error("Error submitting data");
+                    }
+                })
+                .catch((error) => {
+                    console.error(error);
+                    alert("Error submitting data");
+                });
+        }
+    </script>
+</body>
+
+</html>
